@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Account Registration | Hardee's</title>
+    <link rel="stylesheet" href="css/auth.css">
+</head>
+<body class="auth-page">
+    <header class="auth-topbar">
+        <a href="index.html" aria-label="Hardee's home"><img src="assets/hardees_logo.png" alt="Hardee's logo"></a>
+        <a href="index.html">Restaurant home</a>
+    </header>
+    <main class="auth-wrap">
+        <div class="auth-heading">
+            <span>EMPLOYEE PORTAL</span>
+            <h1>Create an employee account</h1>
+            <p>Preview the employee account setup. This independent demo does not create or save accounts.</p>
+        </div>
+        <section class="auth-card">
+            <form class="auth-form" id="signupForm">
+                <label>Full name<input name="name" autocomplete="name" minlength="2" maxlength="100" placeholder="Your name" required></label>
+                <label>Phone number<input name="phone" type="tel" autocomplete="tel" inputmode="numeric" pattern="[0-9]{7,15}" title="Enter 7 to 15 digits." placeholder="9105550123" required></label>
+                <label>Email address<input name="email" type="email" autocomplete="email" maxlength="254" placeholder="you@example.com" required></label>
+                <label>Password<input name="password" type="password" autocomplete="new-password" minlength="10" maxlength="72" placeholder="At least 10 characters" required></label>
+                <div class="account-type" aria-label="Account type">
+                    <span class="account-type-icon" aria-hidden="true">E</span>
+                    <span><strong>Employee account</strong><small>Standard team member access</small></span>
+                    <span class="account-type-tag">EMPLOYEE</span>
+                </div>
+                <button type="submit">PREVIEW SIGNUP</button>
+                <p class="auth-message" id="signupMessage" role="status" aria-live="polite"></p>
+            </form>
+            <p class="auth-note">Administrator access is provisioned privately and is not available through public signup. Demo details are not sent or saved.</p>
+            <nav class="auth-links"><a href="employee-login.html">Employee sign in</a><a href="admin-login.html">Administrator sign in</a></nav>
+        </section>
+    </main>
+    <script src="js/signup.js"></script>
+</body>
+</html>

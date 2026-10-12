@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Sign In | Hardee's</title>
+    <link rel="stylesheet" href="css/auth.css">
+</head>
+<body class="auth-page">
+    <header class="auth-topbar">
+        <a href="index.html" aria-label="Hardee's home"><img src="assets/hardees_logo.png" alt="Hardee's logo"></a>
+        <a href="index.html">Restaurant home</a>
+    </header>
+    <main class="auth-wrap">
+        <div class="auth-heading">
+            <span>EMPLOYEE PORTAL</span>
+            <h1>Employee sign in</h1>
+            <p>Explore a sample employee workspace. No credentials are checked or transmitted in this demo.</p>
+        </div>
+        <section class="auth-card">
+            <form class="auth-form" id="employeeLoginForm">
+                <label>Employee ID<input name="employeeId" autocomplete="username" placeholder="Enter employee ID" required></label>
+                <label>Password<input name="password" type="password" autocomplete="current-password" placeholder="Enter password" minlength="8" required></label>
+                <button type="submit">PREVIEW EMPLOYEE DASHBOARD</button>
+                <p class="auth-message" id="employeeLoginMessage" role="status" aria-live="polite"></p>
+            </form>
+            <a class="preview-link" id="employeePreviewLink" href="employee-dashboard.html" hidden>Open demo employee dashboard <span aria-hidden="true">→</span></a>
+            <nav class="auth-links"><a href="signup.html">Create an account</a><a href="admin-login.html">Administrator sign in</a></nav>
+        </section>
+    </main>
+    <script src="js/employee-login.js"></script>
+</body>
+</html>

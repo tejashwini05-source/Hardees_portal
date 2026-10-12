@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Independent Hardee's-inspired restaurant and employee portal demo for Rockingham, NC">
+
+    <title>Hardee's | Rockingham, NC</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- =====================================================
+         DEMO NOTICE
+    ====================================================== -->
+
+    <div class="demo-banner">
+    INDEPENDENT DEMO · Fictional employee data · Not an official HR or payroll system
+    </div>
+
+
+    <!-- =====================================================
+         HEADER
+    ====================================================== -->
+
+    <header class="header">
+
+        <div class="header-container">
+
+            <!-- LOGO -->
+            <a href="index.html" class="logo-link">
+                <img
+                    src="assets/hardees_logo.png"
+                    alt="Hardee's logo"
+                    class="hardees-logo"
+                >
+            </a>
+
+            <button class="navigation-toggle" id="navigationToggle" type="button" aria-label="Open navigation" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+
+            <!-- NAVIGATION -->
+            <nav class="navigation" id="navigation" aria-label="Main navigation">
+
+                <a href="#home">Home</a>
+
+                <a href="#menu">Menu</a>
+
+                <a href="#offers">Offers</a>
+
+                <a href="#location">Location</a>
+
+                <a href="#careers">Careers</a>
+
+                <a href="#contact">Contact</a>
+
+                <a href="employee-login.html"
+                   class="employee-nav">
+                    Employee Login
+                </a>
+                <a href="signup.html" class="signup-nav">Sign Up</a>
+
+            </nav>
+
+
+            <!-- ORDER BUTTON -->
+            <a
+                href="https://order.hardees.com/location/-nc-rockingham-481-us-highway-1-s/menu"
+                target="_blank"
+                class="order-button"
+            >
+                ORDER NOW
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <!-- =====================================================
+         HERO
+    ====================================================== -->
+
+    <section id="home" class="hero">
+
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+
+            <p class="hero-small">
+                WELCOME TO HARDEE'S
+            </p>
+
+            <h1>
+                GOOD FOOD.
+                <br>
+                GOOD TIMES.
+            </h1>
+
+            <p class="hero-description">
+                Visit Hardee's at 481 US Highway 1 S
+                in Rockingham, North Carolina.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#menu" class="primary-button">
+                    VIEW MENU
+                </a>
+
+                <a href="#location" class="secondary-button">
+                    FIND US
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         LOCATION INFORMATION
+    ====================================================== -->
+
+    <section class="location-summary">
+
+        <div class="location-card">
+
+            <div class="location-icon">
+                📍
+            </div>
+
+            <div>
+                <h3>Rockingham, NC</h3>
+
+                <p>
+                    481 US Highway 1 S
+                    <br>
+                    Rockingham, NC 28379
+                </p>
+            </div>
+
+        </div>
+
+
+        <div class="location-card">
+
+            <div class="location-icon">
+                🕐
+            </div>
+
+            <div>
+                <h3>Open Daily</h3>
+
+                <p>
+                    Mon–Thu: 5:30 AM – 10:00 PM
+                    <br>
+                    Fri–Sat: 5:30 AM – 11:00 PM
+                </p>
+            </div>
+
+        </div>
+
+
+        <div class="location-card">
+
+            <div class="location-icon">
+                ☎
+            </div>
+
+            <div>
+                <h3>Call Us</h3>
+
+                <p>
+                    <a href="tel:+19108177055">
+                        (910) 817-7055
+                    </a>
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         MENU
+    ====================================================== -->
+
+    <section id="menu" class="section menu-section">
+
+        <div class="section-heading">
+
+            <span>OUR MENU</span>
+
+            <h2>
+                LATEST CRAVINGS
+            </h2>
+
+            <p>
+                Enjoy hand-crafted breakfast, burgers,
+                chicken and delicious sides.
+            </p>
+
+        </div>
+
+
+        <div class="menu-grid">
+
+
+            <!-- MENU ITEM 1 -->
+
+            <article class="menu-card">
+
+                <div class="food-image food-one">
+                    🥐
+                </div>
+
+                <div class="menu-content">
+
+                    <span class="menu-category">
+                        BREAKFAST
+                    </span>
+
+                    <h3>
+                        Cinnamon 'N' Raisin
+                        Biscuit 2-pack
+                    </h3>
+
+                    <p>
+                        Warm, fluffy biscuits with
+                        delicious cinnamon and raisins.
+                    </p>
+
+                    <a
+                        href="https://www.hardees.com/menu/featured/cinnamon-n-raisin-biscuit-2-pack"
+                        target="_blank"
+                    >
+                        VIEW DETAILS →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- MENU ITEM 2 -->
+
+            <article class="menu-card">
+
+                <div class="food-image food-two">
+                    🍔
+                </div>
+
+                <div class="menu-content">
+
+                    <span class="menu-category">
+                        BURGERS
+                    </span>
+
+                    <h3>
+                        Bacon Beast Burger
+                        Single Combo
+                    </h3>
+
+                    <p>
+                        A satisfying charbroiled burger
+                        served as a delicious combo.
+                    </p>
+
+                    <a
+                        href="https://www.hardees.com/menu/charbroiled-burger-combos/bacon-beast-burger-single-combo"
+                        target="_blank"
+                    >
+                        VIEW DETAILS →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- MENU ITEM 3 -->
+
+            <article class="menu-card">
+
+                <div class="food-image food-three">
+                    🥤
+                </div>
+
+                <div class="menu-content">
+
+                    <span class="menu-category">
+                        DRINKS
+                    </span>
+
+                    <h3>
+                        S'mores Iced Coffee
+                    </h3>
+
+                    <p>
+                        A refreshing iced coffee with
+                        a delicious sweet flavor.
+                    </p>
+
+                    <a
+                        href="https://www.hardees.com/menu/featured/smores-iced-coffee"
+                        target="_blank"
+                    >
+                        VIEW DETAILS →
+                    </a>
+
+                </div>
+
+            </article>
+
+        </div>
+
+
+        <div class="center-button">
+
+            <a
+                href="https://www.hardees.com/full-menu"
+                target="_blank"
+                class="primary-button"
+            >
+                VIEW FULL MENU
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         RESTAURANT INFORMATION
+    ====================================================== -->
+
+    <section id="location" class="restaurant-section">
+
+        <div class="restaurant-container">
+
+            <div class="restaurant-text">
+
+                <span class="section-label">
+                    VISIT US
+                </span>
+
+                <h2>
+                    Hardee's
+                    <br>
+                    <strong>481 US Highway 1 S</strong>
+                </h2>
+
+                <p class="address">
+                    Rockingham, NC 28379
+                </p>
+
+                <p>
+                    For a delicious breakfast, lunch or dinner,
+                    stop by our Rockingham location.
+                </p>
+
+                <div class="features">
+
+                    <span>✓ Wi-Fi</span>
+
+                    <span>✓ Drive-Thru</span>
+
+                    <span>✓ Order Ahead</span>
+
+                </div>
+
+
+                <div class="restaurant-buttons">
+
+                    <a
+                        href="https://maps.google.com/maps?q=Hardee%27s,%20481%20US%20Highway%201%20S,%20Rockingham%2028379"
+                        target="_blank"
+                        class="primary-button"
+                    >
+                        GET DIRECTIONS
+                    </a>
+
+                    <a
+                        href="tel:+19108177055"
+                        class="phone-button"
+                    >
+                        📞 (910) 817-7055
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- HOURS -->
+
+            <div class="hours-card">
+
+                <h3>
+                    RESTAURANT HOURS
+                </h3>
+
+                <div class="hours-row">
+                    <span>Monday</span>
+                    <strong>5:30 AM – 10:00 PM</strong>
+                </div>
+
+                <div class="hours-row">
+                    <span>Tuesday</span>
+                    <strong>5:30 AM – 10:00 PM</strong>
+                </div>
+
+                <div class="hours-row">
+                    <span>Wednesday</span>
+                    <strong>5:30 AM – 10:00 PM</strong>
+                </div>
+
+                <div class="hours-row">
+                    <span>Thursday</span>
+                    <strong>5:30 AM – 10:00 PM</strong>
+                </div>
+
+                <div class="hours-row">
+                    <span>Friday</span>
+                    <strong>5:30 AM – 11:00 PM</strong>
+                </div>
+
+                <div class="hours-row">
+                    <span>Saturday</span>
+                    <strong>5:30 AM – 11:00 PM</strong>
+                </div>
+
+                <div class="hours-row">
+                    <span>Sunday</span>
+                    <strong>5:30 AM – 10:00 PM</strong>
+                </div>
+
+                <div class="breakfast-note">
+                    Breakfast served until approximately
+                    <strong>10:30 AM</strong>.
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         OFFERS
+    ====================================================== -->
+
+    <section id="offers" class="offers-section">
+
+        <div class="offers-container">
+
+            <div>
+
+                <span class="section-label">
+                    MY REWARDS
+                </span>
+
+                <h2>
+                    GET A FREE TASTE
+                    <br>
+                    OF HARDEE'S!
+                </h2>
+
+                <p>
+                    Sign up for My Rewards and enjoy
+                    exclusive offers and rewards.
+                </p>
+
+                <a
+                    href="https://order.hardees.com/account/signup"
+                    target="_blank"
+                    class="dark-button"
+                >
+                    JOIN NOW
+                </a>
+
+            </div>
+
+            <div class="reward-icon">
+                ★
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         CAREERS
+    ====================================================== -->
+
+    <section id="careers" class="careers-section">
+
+        <div class="careers-content">
+
+            <span class="section-label">
+                CAREERS
+            </span>
+
+            <h2>
+                JOIN OUR TEAM
+            </h2>
+
+            <p>
+                At Hardee's, the opportunities to shine
+                are even bigger than our burgers!
+            </p>
+
+            <a
+                href="https://www.hardees.com/careers"
+                target="_blank"
+                class="primary-button"
+            >
+                LEARN MORE
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         EMPLOYEE LOGIN
+    ====================================================== -->
+
+    <section id="employee-login"
+             class="employee-section">
+
+        <div class="employee-container">
+
+            <div class="employee-info">
+
+                <span class="section-label">
+                    EMPLOYEE PORTAL
+                </span>
+
+                <h2>
+                    EMPLOYEE
+                    <br>
+                    <strong>LOGIN</strong>
+                </h2>
+
+                <p>
+                    Access your employee dashboard,
+                    schedule, attendance and performance
+                    information.
+                </p>
+
+                <div class="employee-features">
+
+                    <div>
+                        ✓ View Schedule
+                    </div>
+
+                    <div>
+                        ✓ View Hours
+                    </div>
+
+                    <div>
+                        ✓ View Pay Statements
+                    </div>
+
+                    <div>
+                        ✓ Employee Profile
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- LOGIN CARD -->
+
+            <div class="login-card">
+
+                <div class="login-logo">
+
+                    <img
+                        src="assets/hardees_logo.png"
+                        alt="Hardee's logo"
+                    >
+
+                </div>
+
+                <h3>
+                    Employee Sign In
+                </h3>
+
+                <p class="login-description">
+                    Preview the employee workspace. Credentials are not checked, sent, or saved.
+                </p>
+
+
+                <form id="loginForm">
+
+                    <div class="form-group">
+
+                        <label for="employeeId">
+                            Employee ID
+                        </label>
+
+                        <input
+                            type="text"
+                            id="employeeId"
+                            name="employeeId"
+                            placeholder="Enter Employee ID"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="password">
+                            Password
+                        </label>
+
+                        <input
+                            type="password"
+                            id="password"
+                            name="password"
+                            placeholder="Enter Password"
+                            required
+                        >
+
+                    </div>
+
+
+                    <button
+                        type="submit"
+                        class="login-button"
+                    >
+                        PREVIEW DASHBOARD
+                    </button>
+
+                </form>
+
+
+                <div
+                    id="loginMessage"
+                    class="login-message"
+                ></div>
+
+                <a class="preview-link" id="previewDashboard" href="employee-dashboard.html" hidden>Open demo employee dashboard <span aria-hidden="true">→</span></a>
+
+
+                <div class="demo-login">
+                    <a href="signup.html">Create an employee account</a> ·
+                    <a href="admin-login.html">Admin dashboard preview</a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         CONTACT
+    ====================================================== -->
+
+    <section id="contact" class="contact-section">
+
+        <div class="section-heading">
+
+            <span>
+                CONTACT
+            </span>
+
+            <h2>
+                WE'RE HERE TO HELP
+            </h2>
+
+        </div>
+
+
+        <div class="contact-grid">
+
+            <div class="contact-card">
+
+                <div class="contact-icon">
+                    📍
+                </div>
+
+                <h3>
+                    Address
+                </h3>
+
+                <p>
+                    481 US Highway 1 S
+                    <br>
+                    Rockingham, NC 28379
+                </p>
+
+            </div>
+
+
+            <div class="contact-card">
+
+                <div class="contact-icon">
+                    ☎
+                </div>
+
+                <h3>
+                    Phone
+                </h3>
+
+                <p>
+                    <a href="tel:+19108177055">
+                        (910) 817-7055
+                    </a>
+                </p>
+
+            </div>
+
+
+            <div class="contact-card">
+
+                <div class="contact-icon">
+                    🕐
+                </div>
+
+                <h3>
+                    Hours
+                </h3>
+
+                <p>
+                    Open daily
+                    <br>
+                    Breakfast until ~10:30 AM
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer class="footer">
+
+        <div class="footer-container">
+
+
+            <div class="footer-brand">
+
+                <img
+                    src="assets/hardees_logo.png"
+                    alt="Hardee's logo"
+                >
+
+                <p>
+                    Hand-crafted food,
+                    made for you.
+                </p>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>
+                    COMPANY
+                </h4>
+
+                <a href="https://www.hardees.com/about-us"
+                   target="_blank">
+                    About Us
+                </a>
+
+                <a href="https://www.hardees.com/locations"
+                   target="_blank">
+                    Locations
+                </a>
+
+                <a href="https://www.hardees.com/careers"
+                   target="_blank">
+                    Careers
+                </a>
+
+                <a href="https://www.hardees.com/contact-us"
+                   target="_blank">
+                    Contact
+                </a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>
+                    QUICK LINKS
+                </h4>
+
+                <a href="#menu">
+                    Menu
+                </a>
+
+                <a href="#offers">
+                    Offers
+                </a>
+
+                <a href="#location">
+                    Location
+                </a>
+
+                    <a href="employee-login.html">
+                    Employee Login
+                </a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>
+                    FOLLOW US
+                </h4>
+
+                <a
+                    href="https://www.facebook.com/Hardees/"
+                    target="_blank"
+                >
+                    Facebook
+                </a>
+
+                <a
+                    href="https://www.instagram.com/hardees/"
+                    target="_blank"
+                >
+                    Instagram
+                </a>
+
+                <a
+                    href="https://www.youtube.com/user/Hardees"
+                    target="_blank"
+                >
+                    YouTube
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                Independent restaurant and employee portal demo. Not affiliated with or an official Hardee's HR or payroll service.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script src="js/app.js"></script>
+
+</body>
+</html>

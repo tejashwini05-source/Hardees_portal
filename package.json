@@ -1,0 +1,32 @@
+{
+  "name": "hardees_portal",
+  "version": "1.0.0",
+  "main": "server/server.js",
+  "scripts": {
+    "test": "node tests/validate.mjs",
+    "dev": "nodemon server/server.js",
+    "dev:frontend": "vite --host 127.0.0.1",
+    "dev:backend": "nodemon server/server.js",
+    "start": "node server/server.js",
+    "create-admin": "node server/scripts/create-admin.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "cookie-parser": "^1.4.7",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-rate-limit": "^7.5.0",
+    "express-validator": "^7.2.1",
+    "helmet": "^8.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.9.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9",
+    "vite": "^6.4.4"
+  }
+}

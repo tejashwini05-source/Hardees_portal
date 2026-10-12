@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrator Sign In | Hardee's</title>
+    <link rel="stylesheet" href="css/auth.css">
+</head>
+<body class="auth-page">
+    <header class="auth-topbar">
+        <a href="index.html" aria-label="Hardee's home"><img src="assets/hardees_logo.png" alt="Hardee's logo"></a>
+        <a href="index.html">Restaurant home</a>
+    </header>
+    <main class="auth-wrap">
+        <div class="auth-heading">
+            <span>MANAGEMENT PORTAL</span>
+            <h1>Administrator sign in</h1>
+            <p>Explore the sample management workspace. No administrator account is created by public signup.</p>
+        </div>
+        <section class="auth-card">
+            <form class="auth-form" id="adminLoginForm">
+                <label>Administrator email<input name="email" type="email" autocomplete="username" maxlength="254" placeholder="admin@example.com" required></label>
+                <label>Password<input name="password" type="password" autocomplete="current-password" placeholder="Enter password" minlength="8" required></label>
+                <button type="submit">PREVIEW ADMIN DASHBOARD</button>
+                <p class="auth-message" id="adminLoginMessage" role="status" aria-live="polite"></p>
+            </form>
+            <a class="preview-link" id="adminPreviewLink" href="admin-dashboard.html" hidden>Open demo admin dashboard <span aria-hidden="true">→</span></a>
+            <nav class="auth-links"><a href="employee-login.html">Employee sign in</a></nav>
+        </section>
+    </main>
+    <script src="js/admin-login.js"></script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Independent demo management dashboard with fictional sample data.">
+    <title>Admin Dashboard Preview | Hardee's-inspired Portal</title>
+    <link rel="stylesheet" href="css/admin-dashboard.css">
+</head>
+<body class="admin-page">
+    <div class="admin-preview-bar"><span class="preview-dot"></span> DEMO PREVIEW <span>Fictional sample data · Nothing is connected or saved</span></div>
+    <div class="admin-shell">
+        <aside class="admin-sidebar" id="adminSidebar">
+            <a class="admin-brand" href="index.html" aria-label="Hardee's home"><img src="assets/hardees_logo.png" alt="Hardee's logo"></a>
+            <div class="admin-workspace-label">RESTAURANT TEAM <span>DEMO</span></div>
+            <nav class="admin-nav" aria-label="Admin navigation">
+                <a class="active" href="#overview" data-section="overview"><span aria-hidden="true">▦</span> Overview</a>
+                <a href="#employees" data-section="employees"><span aria-hidden="true">♙</span> Employees</a>
+                <a href="#attendance" data-section="attendance"><span aria-hidden="true">◷</span> Attendance</a>
+                <a href="#performance" data-section="performance"><span aria-hidden="true">↗</span> Performance</a>
+                <a href="#schedule" data-section="schedule"><span aria-hidden="true">▣</span> Schedule</a>
+            </nav>
+            <div class="admin-sidebar-foot">
+                <div class="admin-user-avatar">AM</div>
+                <div><strong>Alex Morgan</strong><small>Administrator · sample</small></div>
+            </div>
+        </aside>
+
+        <main class="admin-main">
+            <header class="admin-header">
+                <button class="admin-menu-toggle" id="adminMenuToggle" type="button" aria-label="Open navigation" aria-expanded="false">☰</button>
+                <div class="admin-header-title"><span>MANAGEMENT WORKSPACE</span><h1>Team overview</h1></div>
+                <div class="admin-header-actions"><span class="admin-status"><i></i> Preview mode</span><a href="admin-login.html">Exit preview</a></div>
+            </header>
+
+            <div class="admin-content">
+                <section class="admin-intro" id="overview">
+                    <div><p class="admin-date" id="adminToday">MONDAY · OCTOBER 12, 2026</p><h2>Good morning, Alex</h2><p>Here is the team snapshot for the Rockingham location.</p></div>
+                    <span class="sample-pill">SAMPLE DATA</span>
+                </section>
+
+                <section class="admin-summary" aria-label="Team summary">
+                    <article class="summary-card summary-red"><span>TEAM MEMBERS</span><strong id="teamCount">8</strong><small>Demo profiles at this location</small><i aria-hidden="true">♙</i></article>
+                    <article class="summary-card"><span>ON SHIFT</span><strong>5 <small>/ 8</small></strong><small>Sample attendance today</small><i aria-hidden="true">◷</i></article>
+                    <article class="summary-card"><span>ATTENDANCE RATE</span><strong>96%</strong><small>Last 30 days · sample</small><i aria-hidden="true">✓</i></article>
+                    <article class="summary-card"><span>TEAM SCORE</span><strong>93</strong><small>Average performance · sample</small><i aria-hidden="true">↗</i></article>
+                </section>
+
+                <section class="admin-section" id="employees">
+                    <div class="section-heading-row"><div><span class="section-kicker">PEOPLE</span><h2>Employee directory</h2><p>Search and review the sample team roster.</p></div><span class="section-count" id="employeeResultCount">24 team members</span></div>
+                    <div class="admin-panel employee-panel">
+                        <div class="employee-toolbar">
+                            <label class="search-control"><span aria-hidden="true">⌕</span><input id="employeeSearch" type="search" placeholder="Search name or employee ID" aria-label="Search employees"></label>
+                            <label class="filter-control"><span>Role</span><select id="roleFilter" aria-label="Filter employees by role"><option value="all">All roles</option><option value="Crew Member">Crew Member</option><option value="Shift Lead">Shift Lead</option><option value="Manager">Manager</option></select></label>
+                        </div>
+                        <div class="admin-table-wrap"><table class="admin-table">
+                            <thead><tr><th>Employee</th><th>Employee ID</th><th>Role</th><th>Today's shift</th><th>Status</th><th>Score</th></tr></thead>
+                            <tbody id="employeeRows"></tbody>
+                        </table></div>
+                        <p class="table-empty" id="employeeEmpty" hidden>No team members match your search.</p>
+                    </div>
+                </section>
+
+                <section class="admin-section" id="attendance">
+                    <div class="section-heading-row"><div><span class="section-kicker">TIME & ATTENDANCE</span><h2>Today's attendance</h2><p>Sample shift activity for the current day.</p></div><span class="sample-pill">DEMO</span></div>
+                    <div class="attendance-layout">
+                        <div class="attendance-summary-panel">
+                            <div class="attendance-ring" aria-label="96 percent attendance"><strong>96<small>%</small></strong></div>
+                            <div><strong>On-time attendance</strong><p>Across the last 30 sample days</p></div>
+                            <div class="attendance-legend"><span><i class="legend-green"></i> On shift <b>5</b></span><span><i class="legend-yellow"></i> Upcoming <b>2</b></span><span><i class="legend-gray"></i> Off today <b>1</b></span></div>
+                        </div>
+                        <div class="admin-panel attendance-list-panel">
+                            <div class="compact-panel-heading"><h3>Recent clock activity</h3><span>Today · sample</span></div>
+                            <div class="admin-table-wrap"><table class="admin-table"><thead><tr><th>Employee</th><th>Clock in</th><th>Clock out</th><th>Hours</th><th>Status</th></tr></thead><tbody id="attendanceRows"></tbody></table></div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="admin-section" id="performance">
+                    <div class="section-heading-row"><div><span class="section-kicker">TEAM DEVELOPMENT</span><h2>Performance</h2><p>Recent evaluation highlights · sample data.</p></div><a class="text-action" href="#schedule">View schedule <span aria-hidden="true">→</span></a></div>
+                    <div class="performance-grid" id="performanceList"></div>
+                </section>
+
+                <section class="admin-section" id="schedule">
+                    <div class="section-heading-row"><div><span class="section-kicker">COVERAGE</span><h2>Schedule planner</h2><p>Try an assignment; it only appears in this browser session.</p></div><span class="sample-pill">NOT SAVED</span></div>
+                    <div class="schedule-layout">
+                        <form class="admin-panel schedule-form" id="scheduleForm">
+                            <h3>Preview a shift</h3>
+                            <label>Team member<select id="scheduleEmployee" required></select></label>
+                            <label>Date<input id="scheduleDate" type="date" required></label>
+                            <div class="time-fields"><label>Start<input id="shiftStart" type="time" value="06:00" required></label><label>End<input id="shiftEnd" type="time" value="14:00" required></label></div>
+                            <label>Shift type<select id="shiftType"><option>Opening shift</option><option>Midday shift</option><option>Closing shift</option></select></label>
+                            <button type="submit" class="primary-action">PREVIEW ASSIGNMENT</button>
+                            <p class="form-feedback" id="scheduleMessage" role="status" aria-live="polite"></p>
+                        </form>
+                        <div class="admin-panel schedule-list-panel">
+                            <div class="compact-panel-heading"><h3>Upcoming shifts</h3><span id="shiftCount">3 sample shifts</span></div>
+                            <div class="admin-table-wrap"><table class="admin-table"><thead><tr><th>Employee</th><th>Date</th><th>Shift</th><th>Hours</th><th>State</th></tr></thead><tbody id="scheduleRows"></tbody></table></div>
+                        </div>
+                    </div>
+                </section>
+                <footer class="admin-footer">Independent Hardee's-inspired employee portal demo. Sample information only; not an official HR or payroll system.</footer>
+            </div>
+        </main>
+    </div>
+    <div class="admin-toast" id="adminToast" role="status" aria-live="polite"></div>
+    <script src="js/admin-dashboard.js"></script>
+</body>
+</html>
