@@ -15,7 +15,7 @@
             <div class="admin-workspace-label">RESTAURANT TEAM <span>DEMO</span></div>
             <nav class="admin-nav" aria-label="Admin navigation">
                 <a class="active" href="#overview" data-section="overview"><span aria-hidden="true">▦</span> Overview</a>
-                <a href="#employees" data-section="employees"><span aria-hidden="true">♙</span> Employees</a>
+                <a href="#employees" data-section="employees"><span aria-hidden="true">♙</span> Staff</a>
                 <a href="#attendance" data-section="attendance"><span aria-hidden="true">◷</span> Attendance</a>
                 <a href="#performance" data-section="performance"><span aria-hidden="true">↗</span> Performance</a>
                 <a href="#schedule" data-section="schedule"><span aria-hidden="true">▣</span> Schedule</a>
@@ -47,14 +47,14 @@
                 </section>
 
                 <section class="admin-section" id="employees">
-                    <div class="section-heading-row"><div><span class="section-kicker">PEOPLE</span><h2>Employee directory</h2><p>Search and review the sample team roster.</p></div><span class="section-count" id="employeeResultCount">24 team members</span></div>
+                    <div class="section-heading-row"><div><span class="section-kicker">PEOPLE</span><h2>Staff directory</h2><p>Search and review the sample team roster.</p></div><span class="section-count" id="employeeResultCount">24 team members</span></div>
                     <div class="admin-panel employee-panel">
                         <div class="employee-toolbar">
-                            <label class="search-control"><span aria-hidden="true">⌕</span><input id="employeeSearch" type="search" placeholder="Search name or employee ID" aria-label="Search employees"></label>
-                            <label class="filter-control"><span>Role</span><select id="roleFilter" aria-label="Filter employees by role"><option value="all">All roles</option><option value="Crew Member">Crew Member</option><option value="Shift Lead">Shift Lead</option><option value="Manager">Manager</option></select></label>
+                            <label class="search-control"><span aria-hidden="true">⌕</span><input id="employeeSearch" type="search" placeholder="Search name or staff ID" aria-label="Search staff"></label>
+                            <label class="filter-control"><span>Role</span><select id="roleFilter" aria-label="Filter staff by role"><option value="all">All roles</option><option value="Crew Member">Crew Member</option><option value="Shift Lead">Shift Lead</option><option value="Manager">Manager</option></select></label>
                         </div>
                         <div class="admin-table-wrap"><table class="admin-table">
-                            <thead><tr><th>Employee</th><th>Employee ID</th><th>Role</th><th>Today's shift</th><th>Status</th><th>Score</th></tr></thead>
+                            <thead><tr><th>Staff member</th><th>Staff ID</th><th>Role</th><th>Today's shift</th><th>Status</th><th>Score</th></tr></thead>
                             <tbody id="employeeRows"></tbody>
                         </table></div>
                         <p class="table-empty" id="employeeEmpty" hidden>No team members match your search.</p>
@@ -71,7 +71,7 @@
                         </div>
                         <div class="admin-panel attendance-list-panel">
                             <div class="compact-panel-heading"><h3>Recent clock activity</h3><span>Today · sample</span></div>
-                            <div class="admin-table-wrap"><table class="admin-table"><thead><tr><th>Employee</th><th>Clock in</th><th>Clock out</th><th>Hours</th><th>Status</th></tr></thead><tbody id="attendanceRows"></tbody></table></div>
+                            <div class="admin-table-wrap"><table class="admin-table"><thead><tr><th>Staff member</th><th>Clock in</th><th>Clock out</th><th>Hours</th><th>Status</th></tr></thead><tbody id="attendanceRows"></tbody></table></div>
                         </div>
                     </div>
                 </section>
@@ -95,11 +95,11 @@
                         </form>
                         <div class="admin-panel schedule-list-panel">
                             <div class="compact-panel-heading"><h3>Upcoming shifts</h3><span id="shiftCount">3 sample shifts</span></div>
-                            <div class="admin-table-wrap"><table class="admin-table"><thead><tr><th>Employee</th><th>Date</th><th>Shift</th><th>Hours</th><th>State</th></tr></thead><tbody id="scheduleRows"></tbody></table></div>
+                            <div class="admin-table-wrap"><table class="admin-table"><thead><tr><th>Staff member</th><th>Date</th><th>Shift</th><th>Hours</th><th>State</th></tr></thead><tbody id="scheduleRows"></tbody></table></div>
                         </div>
                     </div>
                 </section>
-                <footer class="admin-footer">Independent Hardee's-inspired employee portal demo. Sample information only; not an official HR or payroll system.</footer>
+                <footer class="admin-footer">Independent Hardee's-inspired staff portal demo. Sample information only; not an official HR or payroll system.</footer>
             </div>
         </main>
     </div>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Employee Account Registration | Hardee's</title>
+    <title>Staff Account Registration | Hardee's</title>
     <link rel="stylesheet" href="css/auth.css">
 </head>
 <body class="auth-page">
@@ -13,9 +13,9 @@
     </header>
     <main class="auth-wrap">
         <div class="auth-heading">
-            <span>EMPLOYEE PORTAL</span>
-            <h1>Create an employee account</h1>
-            <p>Preview the employee account setup. This independent demo does not create or save accounts.</p>
+            <span>STAFF PORTAL</span>
+            <h1>Create a staff account</h1>
+            <p>Preview the staff account setup. This independent demo does not create or save accounts.</p>
         </div>
         <section class="auth-card">
             <form class="auth-form" id="signupForm">
@@ -24,15 +24,15 @@
                 <label>Email address<input name="email" type="email" autocomplete="email" maxlength="254" placeholder="you@example.com" required></label>
                 <label>Password<input name="password" type="password" autocomplete="new-password" minlength="10" maxlength="72" placeholder="At least 10 characters" required></label>
                 <div class="account-type" aria-label="Account type">
-                    <span class="account-type-icon" aria-hidden="true">E</span>
-                    <span><strong>Employee account</strong><small>Standard team member access</small></span>
-                    <span class="account-type-tag">EMPLOYEE</span>
+                    <span class="account-type-icon" aria-hidden="true">S</span>
+                    <span><strong>Staff account</strong><small>Standard team member access</small></span>
+                    <span class="account-type-tag">STAFF</span>
                 </div>
                 <button type="submit">PREVIEW SIGNUP</button>
                 <p class="auth-message" id="signupMessage" role="status" aria-live="polite"></p>
             </form>
             <p class="auth-note">Administrator access is provisioned privately and is not available through public signup. Demo details are not sent or saved.</p>
-            <nav class="auth-links"><a href="employee-login.html">Employee sign in</a><a href="admin-login.html">Administrator sign in</a></nav>
+            <nav class="auth-links"><a href="employee-login.html">Staff sign in</a><a href="admin-login.html">Administrator sign in</a></nav>
         </section>
     </main>
     <script src="js/signup.js"></script>

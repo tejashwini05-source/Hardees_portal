@@ -164,7 +164,7 @@ function showPanel(section) {
     }
     dashboard.hidden = true;
     workspacePanel.hidden = false;
-    document.getElementById("workspaceTitle").textContent = titles[section] || "Employee workspace";
+    document.getElementById("workspaceTitle").textContent = titles[section] || "Staff workspace";
     workspaceContent.replaceChildren();
 
     if (section === "schedule") {
@@ -183,7 +183,7 @@ function showPanel(section) {
     } else if (section === "profile") {
         workspaceContent.append(makeTable(["Field", "Value"], [
             ["Name", employee.name],
-            ["Employee ID", employee.employeeId],
+            ["Staff ID", employee.employeeId],
             ["Email", employee.email],
             ["Role", employee.jobTitle],
             ["Location", employee.location],

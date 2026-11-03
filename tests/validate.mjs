@@ -92,7 +92,7 @@ const checks = [
   [userModel.includes('bcrypt.hash') && userModel.includes('select: false') && authRoutes.includes("httpOnly: true") && authMiddleware.includes("jwt.verify"), "passwords are hashed and sessions use verified HttpOnly cookies"],
   [packageJson.scripts.dev.includes("nodemon") && packageJson.scripts.start.includes("node") && packageJson.dependencies.mongoose, "development and production scripts and MongoDB dependencies are configured"],
   [index.includes("navigationToggle") && index.includes("signup.html") && index.includes("admin-login.html") && index.toLowerCase().includes("not an official hr"), "landing navigation and demo disclosures are present"],
-  [signup.includes('name="phone"') && signup.includes('name="email"') && signup.includes('name="password"') && signup.includes("Employee account") && !signup.includes("Admin account"), "signup includes required employee fields without public admin selection"],
+  [signup.includes('name="phone"') && signup.includes('name="email"') && signup.includes('name="password"') && signup.includes("Staff account") && !signup.includes("Admin account"), "signup includes required staff fields without public admin selection"],
   [signupJs.includes("not sent") && !signupJs.includes("fetch("), "signup preview validates without transmitting or storing form data"],
   [employeeLoginJs.includes("not checked or sent") && adminLoginJs.includes("not verified or sent") && !employeeLoginJs.includes("fetch(") && !adminLoginJs.includes("fetch("), "employee and admin sign-in forms are explicitly demo-only"],
   [employeeLogin.includes("employeePreviewLink") && adminLogin.includes("adminPreviewLink") && adminDashboard.includes("DEMO PREVIEW"), "login pages open visibly labeled dashboard previews"],
